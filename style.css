@@ -1,0 +1,535 @@
+/* General */
+@import url(http://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+
+
+html, body{
+	margin: 0;
+	font-family: 'open-sans', sans-serif ; 
+	font-weight: 400;
+	font-style: normal;
+	direction: rtl;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   clear: both;
+}
+
+.anchor{
+	position:relative;
+	top:-117px;
+	display: block;
+	visibility: hidden;
+}
+
+/* Header */
+header{
+	font-family: 'Helvetica Neue';
+	height: 117px;
+	position: fixed;
+	width: 100%;
+	background-color: white;
+	z-index: 1;
+}
+
+	.nav{
+		margin: 0 auto;
+		padding: 15px;
+		width: 85%;
+	}
+
+		/* Logo */
+		.title{
+			margin: 0 auto;
+			font-size: 55px;
+			font-weight: 200;
+			float: left;
+			direction: ltr;
+			position: relative;
+		}
+
+			.title span{
+				color: #b2b2b2;
+			}
+
+			.fa.fa-code{
+				font-size: 30px;
+				font-weight: bold;
+				color: #ec2e39;
+				position: absolute;
+				top: 4px;
+				right: -25px;
+			}
+
+		/* nav menu */
+		.nav-list{
+			float: right;
+		}
+
+			.nav-item{
+				display: inline-block;
+			}
+				.fa.fa-star{
+					color: #eb3f57;
+					position: relative;
+					top: -20;
+					left: -60;
+				}
+
+				.nav-item a{
+					font-size: 18px;
+					padding: 15px;
+					font-weight: bold;
+					color: black;
+				}
+
+				.nav-item a:hover {
+					color: #eb3f57;
+				}
+
+/* Hero */
+#main-image{
+	background-image: url("img/devshots_bg.png");
+	background-position-y: 117px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #212229;
+	padding-bottom: 100px;
+}
+
+	.content{
+		padding-top: 200px;
+		margin-right: 10%;
+		color: white;
+	}
+
+	.event-main-title{
+		font-size: 40px;
+	}
+
+	.event-details{
+		font-size: 26px;
+	}
+		.event-details p{
+			margin: 0;
+		}
+		.event-details h4{
+			margin: 20px 0 0 0;
+			font-size: 30px;
+		}
+
+	.subscribe{
+		width: 300px;
+		display: block;
+		background-color: #eb3f57;
+		line-height: 2;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		font-size: 28px;
+		box-shadow:	0px 4px 0px 0px #a54146;
+		margin: 30px 0 0 0;
+	}
+
+/* lectures */
+.lectures{
+	background-color: #212229;
+	padding-top: 50px;
+}
+
+	.container-lecturers{
+		width: 85%;
+		margin: 0 auto;
+	}
+
+		/* lecturers titles */
+		.right-title{
+			color: 	#d42e44;
+			font-size: 35px;
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+
+		.lecture-time{
+			font-size: 22px;
+			color: white;
+			width: 228px;
+			height: 38px;
+			border: 1px solid white;
+			display: inline-block;
+			margin-right: 140px;
+			padding-top: 10px;
+			text-align: center;
+		}
+
+			.lecture-time p{
+				margin: 0;
+			}
+
+		/* lecturers list */
+		.lectures-list{
+			margin: 0 auto;
+			color: white;
+		}
+
+			.lectures-list li{
+				text-align: right;
+				max-width: 85%;
+				position: relative;
+			}
+
+				.lecturer-image{
+					float: right;
+					margin-left: 30px;
+					margin-bottom: 50px;
+				}
+
+				/* Main description*/
+				.main-description{
+					display: inline-block;
+					transition-property: opacity;
+					transition-duration: 0.3s;
+				}
+
+					.main-description h2{
+						font-size: 25px;
+						margin-top: 25px;
+						margin-bottom: 0px;
+					}
+
+					.main-description h3{
+						font-size: 20px;
+						margin-top: 5px;
+						color: #ff1d3d;
+					}
+
+					.main-description p{
+						font-size: 20px;
+					}
+
+				/* description on hover */
+				.secondary-description{
+					position: absolute;
+					top: 0;
+					left: 0;
+					opacity: 0;
+					transition-property: opacity;
+					transition-duration: 0.3s;
+				}
+
+					.secondary-description h3{
+						margin-top: 30px;
+						font-size: 20px;
+						font-weight: bold;
+						color: #ff1d3d;
+					}
+
+					.secondary-description p{
+						margin-top: 20px;
+						overflow: hidden;
+						font-size: 20px;
+					}
+
+				/* description hover effects*/
+				.lectures-list li:hover .main-description{
+					opacity: 0;
+				}
+
+				.lectures-list li:hover .secondary-description{
+					opacity: 1;
+				}
+
+/* Subscribe */
+#subscribe{
+	background-color: #101115;
+	color: white;
+	padding-bottom: 40px;
+	padding-top: 25px;
+}
+
+	/* Form */
+	.form{
+		width: 35%;
+		margin-right: 10%;
+		display: inline-block;
+
+	}
+		
+		.form h2{
+			margin-top: 0px;
+			padding-top: 20px;
+			font-size: 40px;
+			font-weight: 100;
+		}
+
+		.form p{
+			display: inline-block;
+			font-size: 20px;
+		}
+
+		.subscribe-note{
+			margin-bottom: 5px;
+		}
+
+		.sub-list li{
+			line-height: 2;
+			height: 50px;
+			width: 100%;
+		}
+
+		.sub-list p {
+			margin: 0 auto;
+		}
+
+		.input{
+			width: 300px;
+			height: 40px;
+			float: left;	
+		}
+
+		#submit{
+			float: left;
+			margin: 0px 0px 40px 0px;
+		}
+
+	/* Chat */
+	.chat{
+		width: 35%;
+		float: left;
+		display: inline-block;
+		margin-left: 10%;
+		margin-top: 50px;
+	}
+
+		.chat li{
+			border-radius: 3px;
+			margin-bottom: 35px;
+			padding: 15px;
+			width: 50%;
+			background-color: #f0f0f0;
+			color: #212121;
+			white-space: nowrap;
+			float: right;
+			position: relative;
+		}
+
+		.chat li:nth-child(even){
+			background-color: #2c5770;
+			color: #fff;
+			float: left;
+		}
+
+		.chat li:after{
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 9px;
+			right: -10px;
+			width: 0;
+			height: 0;
+			border-top: 10px solid transparent;
+			border-bottom: 4px solid transparent;
+			border-left: 10px solid #f0f0f0;
+		}
+
+		.chat li:nth-child(even):after{
+			bottom: 9px;
+			right: auto;
+			left: -10px;
+			border-top: 10px solid transparent;
+			border-bottom: 4px solid transparent;
+			border-right: 10px solid #2c5770;		
+			border-left: none;
+		}
+
+/* Location */
+.location{
+	background-color: #212229;
+	color: white;
+}
+
+	#details{
+		padding-top: 25px;
+		padding-bottom: 50px;
+		margin-right: 10%;
+		width: 25%;
+		float: right;
+	}
+
+	#details h2{
+		font-weight: 200;
+		font-size: 40px;
+	}
+
+	#details h3{
+		font-size: 18px;
+		background-color: #8c8c8c;
+		padding: 5px;
+		display: inline-block;
+		margin: 5px;
+	}
+
+	#details h4{
+		font-weight: 200;
+		font-size: 20px;
+	}
+
+	#details p{
+		font-weight: 200;
+	}
+
+		#details-list{
+			padding: 0px;
+		}
+
+		#details-list li{
+			float: right;
+		}
+
+		#hour-label{
+			display: inline-block;
+			width: 70px;
+		}
+
+		#hour{
+			font-size: 40px;
+			margin-left: 5px;
+			font-weight: 100px;
+			font-style: normal;
+		}
+
+	/* Map */
+	.map{
+		padding-top: 60px;
+		padding-bottom: 50px;
+		margin-left: 10%;
+		float: left;
+	}
+
+/* Info */
+#info{
+	background-color: #101115;
+	color: #ccc;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+	.info-details{
+		margin-right: 10%;
+		margin-bottom: 70px;
+	}
+
+	#info h2{
+		font-weight: 200;
+		font-size: 40px;
+	}
+
+	.info-list{
+	}
+
+	.info-list li{
+		display: inline-block;
+	    vertical-align: top;
+		width: 18%;
+	}
+
+	.info-img{
+		width: 165px;
+		height: 165px;
+	}
+
+	.info-img:hover{
+		-moz-box-shadow:    inset 0 0 20px black;
+		-webkit-box-shadow: inset 0 0 20px black;
+		box-shadow:         inset 0 0 20px black;
+		border-radius: 50%;
+	}
+
+	#info-img-1{
+		background-image: url("http://netcraft.co.il/devshots/img/c1.png");
+	}
+
+	#info-img-2{
+		background-image: url("http://netcraft.co.il/devshots/img/c2.png");
+	}
+
+	#info-img-3{
+		background-image: url("http://netcraft.co.il/devshots/img/c3.png");
+	}
+
+	#info-img-4{
+		background-image: url("http://netcraft.co.il/devshots/img/c4.png");
+	}
+
+	#info-img-5{
+		background-image: url("http://netcraft.co.il/devshots/img/c5.png");
+	}
+
+
+	.info-list h3{
+		width: 70%;
+	}
+
+	.info-list p{
+		font-size: 14px;
+		width: 70%;
+	}
+
+.info-buttom{
+	margin-right: 10%;
+}
+
+	.info-buttom h2{
+		display: inline-block;
+		margin-left: 20px;
+	}
+
+	.info-buttom p{
+		display: inline-block;
+	}
+
+footer{
+	background-color: #212229;
+	height: 100px;
+	color: #7d7d7d;
+}
+
+	#up{
+		position: relative;
+		top: -35px;
+		display: block;
+		margin-right: 10%;
+		width: 80px;
+		height: 40px;
+		background-color: #212229;
+	}
+	
+	#up img{
+		position: relative;
+		left: -30px;
+		top: 15px;
+	}
+
+	.footer-links{
+	}
+		
+		.footer-links p{
+
+			margin-right: 10%;
+			margin-left: 20%;
+			font-size: 12px;
+			display: inline;
+		}
+
+		#footer-logo{
+		}
