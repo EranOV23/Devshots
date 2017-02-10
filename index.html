@@ -144,11 +144,12 @@
 
 	</section>
 
-	<!-- anchor subscribe-->
-	<a class="anchor" name="subscribe"></a>
 
 	<!-- Subscribe -->
 	<section id="subscribe">
+
+		<!-- anchor subscribe-->
+		<a class="anchor" id="subscribe-anchor" name="subscribe"></a>
 		
 		<!-- subscribe form -->
 		<div class="form">
@@ -159,29 +160,40 @@
 			<p class="subscribe-note">נשמח אם תרשמו רק אם אתם באמת מתכוונים להגיע - <br> כדי שלא נסרב למישהו אחר.</p>
 			<hr>
 			
+
 			<!-- User input -->
-			<ul class="sub-list">
-				<li>
-					<p>שם מלא *</p>
-					<input class="input clearfix" type="text" placeholder="פרטי וגם משפחה" name="fullname">
-				</li>
-				<li>
-					<p>תפקיד</p>
-					<input class="input clearfix" type="text" placeholder="מה אתם עושים ביום יום" name="role">
-				</li>
-				<li>
-					<p>ארגון</p>
-					<input class="input clearfix" type="text" placeholder="מי משלם לכם משכורת" name="organztion">
-				</li>
-				<li>
-					<p>אימייל *</p>
-					<input class="input clearfix" type="text" placeholder="האמיתי, אליו נשלח את אישור ההזמנה" name="email">
-				</li>
-				<li>
-					<p>מספר טלפון *</p>
-					<input class="input clearfix" type="text" placeholder="או סלולרי, לנו לא אכפת" name="phone">
-				</li>
-			</ul>
+			<dl>
+				<div class="user-data">
+					<dt>שם מלא *</dt>
+					<dd>
+						<input class="input clearfix" type="text" placeholder="פרטי וגם משפחה" name="fullname">
+					</dd>
+				</div>
+				<div class="user-data">
+					<dt>תפקיד</dt>
+					<dd>
+						<input class="input clearfix" type="text" placeholder="מה אתם עושים ביום יום" name="role">
+					</dd>
+				</div>
+				<div class="user-data">
+					<dt>ארגון</dt>
+					<dd>
+						<input class="input clearfix" type="text" placeholder="מי משלם לכם משכורת" name="organztion">
+					</dd>
+				</div>
+				<div class="user-data">
+					<dt>אימייל *</dt>
+					<dd>
+						<input class="input clearfix" type="text" placeholder="האמיתי, אליו נשלח את אישור ההזמנה" name="email">
+					</dd>
+				</div>
+				<div class="user-data">
+					<dt>מספר טלפון *</dt>
+					<dd>
+						<input class="input clearfix" type="text" placeholder="או סלולרי, לנו לא אכפת" name="phone">
+					</dd>
+				</div>
+			</dl>
 
 			<!-- Submit button -->
 			<div class="clearfix">
@@ -221,16 +233,13 @@
 			<h4>הערב יערך בבר הקנטה, על גג גן העיר</h4>
 			<p>אבן גבירול 71 תל אביב</p>
 			<hr>
-			<ul class="clearfix" id="details-list">
-				<li>
-					<span id="hour-label">מתכנסים בשעה:</span>
-					<span id="hour">18:30</span>
-				</li>
-				<li>
-					<span id="hour-label">הרצאה ראשונה:</span>
-					<span id="hour">19:00</span>
-				</li>
-			</ul>
+			<dl id="details-list">
+				<dt>מתכנסים<br>בשעה:</dt>
+				<dd>18:30</dd>
+
+				<dt>הרצאה<br>ראשונה:</dt>
+				<dd>19:00</dd>
+			</dl>
 			<hr>
 			<h4>חניה</h4>
 			<hr>
@@ -245,11 +254,12 @@
 
 	</section>
 
-	<!-- anchor -->
-	<a class="anchor" name="info"></a>
 
 	<!-- Info -->
 	<section id="info">
+		<!-- anchor -->
+		<a class="anchor" id="info-anchor" name="info"></a>
+
 		<div class="info-details">
 			<h2>מידע נוסף</h2>
 			

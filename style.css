@@ -32,6 +32,20 @@ a{
 	visibility: hidden;
 }
 
+#subscribe-anchor{
+	margin-top: 100px;
+	display: block;
+	visibility: hidden;
+	position: static;
+}
+
+#info-anchor{
+	margin-top: 100px;
+	display: block;
+	visibility: hidden;
+	position: static;	
+}
+
 /* Header */
 header{
 	font-family: 'Helvetica Neue';
@@ -281,14 +295,11 @@ header{
 			margin-bottom: 5px;
 		}
 
-		.sub-list li{
-			line-height: 2;
-			height: 50px;
-			width: 100%;
-		}
-
-		.sub-list p {
-			margin: 0 auto;
+		.user-data{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-top: 10px;
 		}
 
 		.input{
@@ -389,12 +400,17 @@ header{
 	}
 
 		#details-list{
-			padding: 0px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: 
 		}
 
-		#details-list li{
-			float: right;
-		}
+			#details-list dd{
+				margin-right: 5px;
+				font-size: 30px;
+			}
+
 
 		#hour-label{
 			display: inline-block;
