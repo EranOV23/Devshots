@@ -1,8 +1,8 @@
 /* General */
 @import url(http://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
 
-
 html, body{
+	padding: 0;
 	margin: 0;
 	font-family: 'open-sans', sans-serif ; 
 	font-weight: 400;
@@ -87,11 +87,13 @@ header{
 
 		/* nav menu */
 		.nav-list{
-			float: right;
+			padding-right: 0;
+			margin-top: 25px;
 		}
 
 			.nav-item{
 				display: inline-block;
+				float: right;
 			}
 				.fa.fa-star{
 					color: #eb3f57;
@@ -110,6 +112,10 @@ header{
 				.nav-item a:hover {
 					color: #eb3f57;
 				}
+
+		.fa.fa-bars{
+			display: none;
+		}
 
 /* Hero */
 #main-image{
@@ -144,7 +150,7 @@ header{
 
 	.subscribe{
 		width: 300px;
-		display: block;
+		display: inline-block;
 		background-color: #eb3f57;
 		line-height: 2;
 		color: white;
@@ -182,6 +188,7 @@ header{
 			border: 1px solid white;
 			display: inline-block;
 			margin-right: 140px;
+			margin-bottom: 40px;
 			padding-top: 10px;
 			text-align: center;
 		}
@@ -229,6 +236,7 @@ header{
 
 					.main-description p{
 						font-size: 20px;
+						overflow: hidden;
 					}
 
 				/* description on hover */
@@ -300,6 +308,12 @@ header{
 			align-items: center;
 			justify-content: space-between;
 			margin-top: 10px;
+			margin-bottom: 10px;
+			flex-wrap: wrap;
+		}
+
+		.user-data dt{
+			width: 95px;
 		}
 
 		.input{
@@ -403,7 +417,7 @@ header{
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			flex-direction: 
+			flex-direction:
 		}
 
 			#details-list dd{
@@ -451,12 +465,13 @@ header{
 	}
 
 	.info-list{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	.info-list li{
-		display: inline-block;
-	    vertical-align: top;
-		width: 18%;
+		width: 200px;
 	}
 
 	.info-img{
@@ -537,10 +552,10 @@ footer{
 	}
 
 	.footer-links{
+		display: flex;
 	}
 		
 		.footer-links p{
-
 			margin-right: 10%;
 			margin-left: 20%;
 			font-size: 12px;
@@ -548,4 +563,75 @@ footer{
 		}
 
 		#footer-logo{
+			margin-left: 10px;
+			display: inline-block;
+			float: left;
 		}
+
+@media  (max-width: 1024px) {
+	
+	/* Nav Bar */
+	.nav-item{
+		display: none;
+	}
+
+	.fa.fa-bars{
+		display: inline-block;
+		font-size: 35px;
+	}
+
+	/* Hero */
+	#main-image{
+		background-image: url("	http://netcraft.co.il/fedonbeer/img/mobile_img.png");
+		background-position-y: 117px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-color: #212229;
+		padding-bottom: 20px;
+	}
+
+	.content{
+		margin: 0 auto;
+		text-align: center;
+		align-items: center;
+	}
+
+	/* lectures */
+	.lectures{
+		text-align: center;
+	}
+
+		.lecture-time{
+			margin-right: 0;
+		}
+
+	/* Subscribe */
+	#submit{
+		float: none;
+	}
+
+
+}
+
+@media (max-width: 768px){
+
+	.chat{
+		display: none;
+	}
+
+	.form{
+		text-align: center;
+		float: none;
+		width: 85%;
+	}
+
+	#details{
+		text-align: center;
+		width: 85%;
+	}
+
+	.map{
+		display: none;
+	}
+}
+
