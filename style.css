@@ -219,7 +219,7 @@ header{
 				.main-description{
 					display: inline-block;
 					transition-property: opacity;
-					transition-duration: 0.3s;
+					transition-duration: 0.2s;
 				}
 
 					.main-description h2{
@@ -243,10 +243,10 @@ header{
 				.secondary-description{
 					position: absolute;
 					top: 0;
-					left: 0;
+					right: 0;
 					opacity: 0;
 					transition-property: opacity;
-					transition-duration: 0.3s;
+					transition-duration: 0.2s;
 				}
 
 					.secondary-description h3{
@@ -314,6 +314,10 @@ header{
 
 		.user-data dt{
 			width: 95px;
+		}
+
+		.user-data dd{
+			margin-right: 0px;
 		}
 
 		.input{
@@ -418,6 +422,10 @@ header{
 			justify-content: space-between;
 			align-items: center;
 			flex-direction:
+		}
+
+		.details-list-item{
+			display: flex;
 		}
 
 			#details-list dd{
@@ -610,28 +618,89 @@ footer{
 		float: none;
 	}
 
+	/* Chat */
+	.chat li{
+		font-size: 12px;
+		letter-spacing: -0.5;
+	}
+
+	#details-list{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.map{
+		margin-right: 10px;
+	}
 
 }
 
 @media (max-width: 768px){
 
+	/* lectures */
+	.lectures-list li:hover .main-description{
+		opacity: 1;
+	}
+
+		.main-description{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+			.main-description h3{
+				display: none;
+			}
+
+		.secondary-description{
+			position: static;
+			opacity: 1;
+			padding: 2px;
+		}
+
+			.secondary-description .lecturer-image{
+				display: none;
+			}
+
+	/* Chat */
 	.chat{
 		display: none;
 	}
 
+	/* Subscribe form */
 	.form{
 		text-align: center;
 		float: none;
 		width: 85%;
 	}
 
+	/* location details*/
 	#details{
 		text-align: center;
 		width: 85%;
 	}
 
+		#details-list{
+			flex-direction: initial;
+			justify-content: space-around;
+		}
+
 	.map{
 		display: none;
+	}
+
+	/* More info */
+	.info-details{
+		text-align: center;
+		margin-right: 0px;
+	}
+
+		.info-list{
+			justify-content: space-around;
+		}
+
+	footer{
+		padding-bottom: 55px;
 	}
 }
 
